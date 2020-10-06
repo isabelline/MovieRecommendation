@@ -11,7 +11,7 @@ python train.py # 훈련을 시작하고 결과 파일을 작성합니다.
 
 ## 데이터셋 분석
 
-- MovieLense Dataset: 유저가 특정 영화에 대하여 0<rating <=5 인 값을 매긴 데이터입니다.
+- [MovieLense Dataset](https://grouplens.org/datasets/movielens/): 유저가 특정 영화에 대하여 0<rating <=5 인 값을 매긴 데이터입니다.
 - 예시 <br> <br>
 ![데이터셋 예시](/images/dataset.png)
 - 분포 <br> <br>
