@@ -183,11 +183,6 @@ if __name__ == "__main__":
     print("test rating matrix shape: ")
     print(ratings_matrix_ts.shape)
 
-    # 아래 주석은 train에 없는 test data를 비슷한 train data로 유추하여 사용하기 위해 만들었으나, 시간 관계상 다른 방법을 선택하였습니다.
-    # excluded_user_idx = get_untrained_test_id(user_dict_ts.keys(), user_dict_tr.keys(), user_dict_ts)
-    # excluded_movie_idx = get_untrained_test_id(movie_dict_ts.keys(), movie_dict_tr.keys(), movie_dict_ts)
-    # print("Got train excluded user, movies of test set")
-
     # Matrix Factorization 모델 을 이용하여 학습과 평가를 시작합니다.
     model = ExplicitMatrixFactorization(ratings_matrix_tr, ratings_matrix_ts, latent_dim=40, learning_rate=0.01, reg_lambda=0.01, epoch_num=30)
     print("Starting Training.....")
